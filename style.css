@@ -20,27 +20,27 @@ background:linear-gradient(135deg,#4facfe,#00f2fe);
 
 background:white;
 
-padding:35px;
+padding:30px;
 
 border-radius:20px;
 
-text-align:center;
+width:350px;
 
-width:340px;
+text-align:center;
 
 box-shadow:0 20px 40px rgba(0,0,0,0.2);
 
 }
 
-.top{
+.controls{
 
 display:flex;
 
 gap:10px;
 
-justify-content:center;
-
 flex-wrap:wrap;
+
+justify-content:center;
 
 }
 
@@ -76,7 +76,7 @@ background:#3a8de0;
 
 }
 
-.weatherBox img{
+.weather img{
 
 width:90px;
 
@@ -126,8 +126,6 @@ color:white;
 
 background:#222;
 
-color:white;
-
 }
 
 @media(max-width:500px){
@@ -143,12 +141,6 @@ width:90%;
 flex-wrap:wrap;
 
 gap:10px;
-
-}
-
-.day{
-
-width:80px;
 
 }
 

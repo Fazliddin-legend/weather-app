@@ -53,11 +53,8 @@ const day = data.list[i*8];
 
 forecastBox.innerHTML += `
 <div class="day">
-
 <p>${day.dt_txt.split(" ")[0]}</p>
-
 <p>${Math.round(day.main.temp)}°C</p>
-
 </div>
 `;
 
@@ -86,7 +83,6 @@ function getLocationWeather(){
 navigator.geolocation.getCurrentPosition(async position => {
 
 const lat = position.coords.latitude;
-
 const lon = position.coords.longitude;
 
 const url =
