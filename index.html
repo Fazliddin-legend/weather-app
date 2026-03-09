@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -17,8 +18,10 @@
 
 <h1>Weather App 🌤</h1>
 
+<div class="top">
+
 <input 
-type="text" 
+type="text"
 id="cityInput"
 placeholder="Enter city"
 onkeypress="handleKey(event)"
@@ -26,7 +29,13 @@ onkeypress="handleKey(event)"
 
 <button onclick="getWeather()">Search</button>
 
-<div id="weatherBox">
+<button onclick="getLocationWeather()">📍</button>
+
+<button onclick="toggleDarkMode()">🌙</button>
+
+</div>
+
+<div class="weatherBox">
 
 <img id="weatherIcon">
 
@@ -37,6 +46,8 @@ onkeypress="handleKey(event)"
 <p id="description"></p>
 
 </div>
+
+<div id="forecast"></div>
 
 </div>
 

@@ -1,10 +1,13 @@
 body{
 
 margin:0;
+
 height:100vh;
 
 display:flex;
+
 justify-content:center;
+
 align-items:center;
 
 font-family:Arial;
@@ -17,27 +20,33 @@ background:linear-gradient(135deg,#4facfe,#00f2fe);
 
 background:white;
 
-padding:40px;
+padding:35px;
 
 border-radius:20px;
 
 text-align:center;
 
-width:320px;
+width:340px;
 
 box-shadow:0 20px 40px rgba(0,0,0,0.2);
 
 }
 
+.top{
+
+display:flex;
+
+gap:10px;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
 input{
 
-padding:12px;
-
-width:80%;
-
-margin-bottom:15px;
-
-font-size:16px;
+padding:10px;
 
 border-radius:8px;
 
@@ -47,19 +56,17 @@ border:1px solid #ccc;
 
 button{
 
-padding:12px 20px;
+padding:10px;
 
 border:none;
 
 border-radius:8px;
 
+cursor:pointer;
+
 background:#4facfe;
 
 color:white;
-
-font-size:16px;
-
-cursor:pointer;
 
 }
 
@@ -69,11 +76,11 @@ background:#3a8de0;
 
 }
 
-#weatherIcon{
+.weatherBox img{
 
-width:100px;
+width:90px;
 
-margin-top:20px;
+margin-top:15px;
 
 }
 
@@ -82,5 +89,67 @@ margin-top:20px;
 font-size:40px;
 
 margin:10px 0;
+
+}
+
+#forecast{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:20px;
+
+}
+
+.day{
+
+background:#f1f1f1;
+
+padding:10px;
+
+border-radius:10px;
+
+width:60px;
+
+}
+
+.dark{
+
+background:#111;
+
+color:white;
+
+}
+
+.dark .card{
+
+background:#222;
+
+color:white;
+
+}
+
+@media(max-width:500px){
+
+.card{
+
+width:90%;
+
+}
+
+#forecast{
+
+flex-wrap:wrap;
+
+gap:10px;
+
+}
+
+.day{
+
+width:80px;
+
+}
 
 }
